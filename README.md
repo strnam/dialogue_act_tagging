@@ -1,9 +1,8 @@
 ##### Run pretrain
 
+```console
 export GOTIT_DIR="path to gotit data"
-
 export INPUT_DIR="path to create input dir for next step"
-
 export PRETRAIN_DIR = 'path for pretrain dir '
 
 python pretrain/gen_vocab.py \\
@@ -33,8 +32,10 @@ python pretrain.py \\
     --num_timesteps=400 \\
     --keep_prob_emb=0.5 \\
     --normalize_embeddings
+```
     
 ####
-
+```console
 python training.py
 python prediction.py
+```
